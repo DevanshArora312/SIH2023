@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import HighlightedText from "../components/HighlightedText";
 import girlStudying from "../assets/girlStudying.mp4";
+import Line from "../components/Line";
+import logo1 from '../assets/fi-sr-badge.svg';
+import logo2 from '../assets/fi-sr-diamond.svg';
+import logo3 from '../assets/fi-sr-fox.svg';
+import logo4 from '../assets/fi-sr-graduation-cap.svg';
 function Landing() {
   return (
     <div className="bg-white w-screen min-h-screen overflow-x-hidden">
