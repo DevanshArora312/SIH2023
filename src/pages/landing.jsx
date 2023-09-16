@@ -34,23 +34,21 @@ function Landing() {
           <video
             autoPlay
             loop
+			muted
             style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 50px" }}
             className="w-full my-12"
           >
-            <source src={girlStudying} />
+            <source src={girlStudying}></source>
           </video>
         </div>
       </div>
       <div className="flex flex-col justify-between relative">
         <div className="flex items-center gap-[1.25rem]">
-          <div
-            style={{ boxShadow: "0px 0px 62px 0px rgba(0, 0, 0, 0.12)" }}
-            className="w-[3.25rem] h-[3.25rem] rounded-full bg-white flex items-center justify-center"
-          >
+          <div style={{ boxShadow: "0px 0px 62px 0px rgba(0, 0, 0, 0.12)" }} className="w-[3.25rem] h-[3.25rem] rounded-full bg-white flex items-center justify-center">
             <img src={logo1}></img>
           </div>
           <div>
-            <div className="text-richblack-800 font-bold text-lg">
+            <div className="text-slate-800 font-bold text-lg">
               Leadership
             </div>
             <div>Fully committed to the success company</div>
@@ -58,17 +56,14 @@ function Landing() {
         </div>
         <Line />
         <div className="flex items-center gap-[1.25rem]">
-          <div
-            style={{ boxShadow: "0px 0px 62px 0px rgba(0, 0, 0, 0.12)" }}
-            className="w-[3.25rem] h-[3.25rem] rounded-full bg-white flex items-center justify-center"
-          >
+          <div style={{ boxShadow: "0px 0px 62px 0px rgba(0, 0, 0, 0.12)" }} className="w-[3.25rem] h-[3.25rem] rounded-full bg-white flex items-center justify-center">
             <img src={logo2}></img>
           </div>
           <div>
-            <div className="text-richblack-800 font-bold text-lg">
+            <div className="text-slate-800 font-bold text-lg">
               Responsibility
             </div>
-            <div className="text-richblack-700 text-sm">
+            <div className="text-slate-700 text-sm">
               Students will always be our top priority
             </div>
           </div>
@@ -82,7 +77,7 @@ function Landing() {
             <img src={logo3}></img>
           </div>
           <div>
-            <div className="text-richblack-800 font-bold text-lg">
+            <div className="text-slate-800 font-bold text-lg">
               Flexibility
             </div>
             <div>The ability to switch is an important skills</div>
@@ -97,7 +92,7 @@ function Landing() {
             <img src={logo4}></img>
           </div>
           <div>
-            <div className="text-richblack-800 font-bold text-lg">
+            <div className="text-slate-800 font-bold text-lg">
               Solve the problem
             </div>
             <div>Code your way to a solution</div>
