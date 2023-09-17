@@ -90,10 +90,8 @@ const SingleProject = () => {
                         }
                         
                     </div>
-
                 </div>
             </div>
-            
         </div>
     );
 }
