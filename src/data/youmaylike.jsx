@@ -1,19 +1,20 @@
-import logo1 from '../assets/fi-sr-fox.svg';
+import yml1 from '../assets/yml1.png';
+import yml2 from '../assets/yml2.png';
 export const youmaylike = [
     {
-        source : {logo1},
+        source : yml1,
+        title : 'Project to determine mood based on Artificial Intelligence and Machine Learning'
+    },
+    {
+        source : yml2,
+        title : 'Project to determine mood based on Artificial Intelligence and Machine Learning'
+    },
+    {
+        source : yml1,
         title : 'title'
     },
     {
-        source : {logo1},
-        title : 'title'
-    },
-    {
-        source : {logo1},
-        title : 'title'
-    },
-    {
-        source : {logo1},
+        source : yml1,
         title : 'title'
     },
     
