@@ -6,6 +6,7 @@ import  SignUp from "./pages/signup"
 import  Landing  from './pages/landing';
 import SingleProject from './pages/SingleProject';
 import  Dashboard  from './pages/dashboard';
+import Leaderboard from './pages/leaderboard';
 function App() {
   const [count, setCount] = useState(0);
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/signup' element ={<SignUp/>}/>
         <Route exact path="/project/:id" element={<SingleProject/>}/>
         <Route exact path='/campus/dashboard/:id' element ={<Dashboard/>}/>
+        <Route exact path="leaderboard" element={<Leaderboard/>}/>
       </Routes>
     </BrowserRouter>
   )
