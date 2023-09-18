@@ -1,8 +1,9 @@
-# React + Vite
+# Created by team - The Fetch Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prototype code repository for SIH 2023.
 
-Currently, two official plugins are available:
+Problem statement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can find the Prototype here(https://sih-2023-realest.vercel.app/) or in the About Repository portion.
+
+For the drive link of PPT and video demonstration click Here (https://drive.google.com/drive/folders/1tJ9L-ygen9hJ6Z07Y_NPcasq5TpUBpub?usp=drive_link ).
