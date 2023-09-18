@@ -7,7 +7,7 @@ import titlebg from "../assets/titlebg.png"
 const SingleProject = () => {
     return (  
         <div className="relative flex w-full h-full text-black"> 
-            <Sidebar/>
+            <Sidebar bg={"rgb(255,214,10)"}/>
             
             <div className=" relative w-full shrink-1 space-y-10" >
                 <div style={{backgroundImage:`url(${titlebg})`,backgroundSize: 'cover'}} className="text-white p-10 flex flex-col items-end ">
