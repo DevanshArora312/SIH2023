@@ -1,10 +1,12 @@
 import {React, useState} from 'react';
-import background from '../assets/background.png';
+import background from '../assets/login.jpg';
 import {Link} from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import ButtonLoader from '../components/buttonLoader';
 import ButtonError from '../components/buttonError';
+import {AiFillEye, AiOutlineEyeInvisible} from 'react-icons/ai';
 const LoginPage = () => {
+    const [showPassword, setshowPassword] = useState(false);
     const [formData, setFormData] = useState({email:"", password:""});
     const [isClicked,setisClicked] = useState(false);
     const [emptyError,setEmptyError] = useState(true);
@@ -44,14 +46,24 @@ const LoginPage = () => {
             >
             </div>
             <div className='absolute flex justify-center items-center inset-0'>
-                <div className='w-[25%] min-w-[500px] aspect-[9/10] bg-white/10 rounded-md flex flex-col items-center justify-center gap-4 max-sm:min-w-[250px] max-md:p-5'>
+                <div style={{
+                        backdropFilter: 'blur(35px)'
+                    }} className='w-[25%] min-w-[500px] aspect-[9/10] bg-white/10 rounded-md flex flex-col items-center justify-center gap-4 max-sm:min-w-[250px] max-md:p-5'>
                     <p className='text-white text-center text-[1.25rem]'>WELCOME BACK</p>
                     <form onSubmit={submitHandler} className='flex flex-col items-center justify-center gap-4 p-5'>
                         <div className='w-full'>
                             <input className='rounded-md w-full h-10 bg-white focus:outline-none text-black px-2 ' name="email" id="email" type='email' placeholder='sqpants@gmail.com' onChange={changeHandler}></input>
                         </div>
-                        <div className='w-full'>
+                        <div className='w-full relative'>
                             <input className='rounded-md w-full h-10 bg-white focus:outline-none text-black px-2' name="password" id="password" type='password' placeholder='wh1t3_p4nt$' onChange={changeHandler}></input>
+                            <div className='absolute right-4 cursor-pointer bottom-[0.55rem] text-slate-500 text-xl' onClick={()=>{
+                                                                                                                                        setshowPassword(!showPassword);
+                                                                                                                                        document.getElementById('password').type = showPassword ? 'password' : 'text';
+                                                                                                                                    }}>
+                                {
+                                    showPassword ? <AiOutlineEyeInvisible/> : <AiFillEye/> 
+                                }
+                            </div>
                         </div>
                         <div className='w-full'>
                             {(isClicked && emptyError) ? <ButtonError text = {"LOG IN"}/> : <button className='default w-full focus:outline-none' disabled={isClicked}>
