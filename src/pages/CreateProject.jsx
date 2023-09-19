@@ -12,7 +12,7 @@ const CreateProject = () => {
                         <label htmlFor="title" className="pt-2 mr-3">
                             Title :
                         </label>
-                        <input id = "title" placeholder="Title" maxlength = "30" className="rounded-xl p-2 h-10 focus:outline-none"/>
+                        <input id = "title" placeholder="Title" maxLength = "30" className="rounded-xl p-2 h-10 focus:outline-none"/>
                         <p className="text-sm items-end p-4">(Max. 30 characters)</p>
                     </div>
 
@@ -20,7 +20,7 @@ const CreateProject = () => {
                         <label htmlFor="subtext" className="pt-2 mr-3">
                             SubText :
                         </label>
-                        <input id = "subtext" placeholder="Enter Subtext" maxlength = "50" className="rounded-xl p-2 h-10 focus:outline-none"/>
+                        <input id = "subtext" placeholder="Enter Subtext" maxLength = "50" className="rounded-xl p-2 h-10 focus:outline-none"/>
                         <p className="text-sm items-end p-4">(Max. 50 characters)</p>
                     </div>
                     <div className="text-xl w-full">
@@ -50,7 +50,7 @@ const CreateProject = () => {
                         <label htmlFor="subtext" className="pt-2 mr-3">
                             Details :
                         </label>
-                        <textarea id = "details" placeholder="Enter Details" maxlength = "250" className="rounded-xl w-full text-sm p-2 h-full focus:outline-none"/>
+                        <textarea id = "details" placeholder="Enter Details" maxLength = "250" className="rounded-xl w-full text-sm p-2 h-full focus:outline-none"/>
                         <p className="text-sm items-end p-4">(Max. 250 characters)</p>
                     </div>
                     <div className="flex text-xl">
@@ -63,7 +63,7 @@ const CreateProject = () => {
                         <label htmlFor="tech" className="pt-2 mr-3 w-[350px]">
                             Technologies Used :
                         </label>
-                        <textarea id = "tech" placeholder="Enter Tech" maxlength = "250" className="rounded-xl w-full p-2 h-full text-sm focus:outline-none"/>
+                        <textarea id = "tech" placeholder="Enter Tech" maxLength = "250" className="rounded-xl w-full p-2 h-full text-sm focus:outline-none"/>
                         <p className="text-sm items-end p-4">(Max. 250 characters)</p>
                     </div>
                     <div>
