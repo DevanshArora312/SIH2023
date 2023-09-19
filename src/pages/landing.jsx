@@ -16,9 +16,11 @@ import youtube from '../assets/youtube.svg'
 import facebook from '../assets/facebook.svg'
 import google from '../assets/google.svg'
 import twitter from '../assets/twitter.svg'
+import BetterNavBar from "../sections/BetterNavBar";
 function Landing() {
   return (
     <div className="bg-white w-screen min-h-screen overflow-x-hidden">
+      <BetterNavBar/>
         <div className="flex justify-center items-center py-12">
         	<Link to="/signup" className="group text-xl flex justify-center items-center gap-2 text-gray-700 bg-[#ffd60a] py-[12px] px-[28px] rounded-md duration-200 hover:scale-95 hover:text-gray-700">Learn now <FaArrowRight className="duration-200 group-hover:translate-x-2 text-gray-700 translate-y-[2px]" /></Link>
         </div>

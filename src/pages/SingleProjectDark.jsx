@@ -6,10 +6,10 @@ import { youmaylike } from "../data/youmaylike";
 import titlebg from "../assets/titlebg.png" 
 const SingleProjectDark = () => {
     return (  
-        <div className="relative flex w-full h-full text-black bg-[rgb(246,255,252)]"> 
+        <div className="relative flex w-full h-full text-black bg-[rgb(246,235,252)]"> 
             <Sidebar bg={"rgb(66,87,77)"}/>
             
-            <div className=" relative w-full shrink-1 space-y-10" >
+            <div className="relative w-full shrink-1 space-y-10" >
                 <div className="text-white p-5 bg-[rgb(44,43,43)] font-mono">
                     <h1 className="my-5">Title</h1>
                 </div>

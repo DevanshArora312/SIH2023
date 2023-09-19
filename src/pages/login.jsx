@@ -4,16 +4,20 @@ import {Link} from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import ButtonLoader from '../components/buttonLoader';
 import ButtonError from '../components/buttonError';
+import {useNavigate} from "react-router-dom" 
 import {AiFillEye, AiOutlineEyeInvisible} from 'react-icons/ai';
 const LoginPage = () => {
     const [showPassword, setshowPassword] = useState(false);
     const [formData, setFormData] = useState({email:"", password:""});
     const [isClicked,setisClicked] = useState(false);
     const [emptyError,setEmptyError] = useState(true);
+    const navigate = useNavigate();
     const submitHandler = (event) => {
         event.preventDefault();
+        var check = false;
         if (formData['email'] == '' || formData['password'] == '') {
             setEmptyError(true);
+            check = true;
         } 
         else {
             setEmptyError(false);
@@ -21,6 +25,7 @@ const LoginPage = () => {
         setisClicked(true);
         setTimeout(()=>{
             setisClicked(false);
+            if(!check) navigate("/campus");
         },2000);
     }
     const changeHandler = (event)=>{

@@ -9,6 +9,8 @@ import SingleProjectDark from './pages/SingleProjectDark';
 import  Dashboard  from './pages/dashboard';
 import Leaderboard from './pages/leaderboard';
 import CreateProject from './pages/CreateProject';
+import Colleges from "./pages/Colleges"
+import Projects from './pages/Projects';
 function App() {
   const [count, setCount] = useState(0);
   return (
@@ -17,9 +19,11 @@ function App() {
         <Route exact path="/" element={<Landing/>}/>
         <Route exact path='/login' element ={<Login/>}/>
         <Route exact path='/signup' element ={<SignUp/>}/>
-        <Route exact path="/project/:id" element={<SingleProjectDark/>}/>
+        <Route exact path="/campus" element={<Colleges/>}/>
+        <Route exact path="/projects" element={<Projects/>}/>
+        <Route exact path="/projects/:id" element={<SingleProjectDark/>}/>
         <Route exact path='/campus/dashboard/:id' element ={<Dashboard/>}/>
-        <Route exact path='/add/project/' element ={<CreateProject/>}/>
+        <Route exact path='/projects/add' element ={<CreateProject/>}/>
         <Route exact path="leaderboard" element={<Leaderboard/>}/>
       </Routes>
     </BrowserRouter>

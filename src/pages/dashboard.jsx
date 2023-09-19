@@ -5,6 +5,7 @@ import HighlightedText from '../components/HighlightedText';
 import project1 from '../assets/Project1.png';
 import project2 from '../assets/Project2.png';
 import project3 from '../assets/Project3.png';
+import BetterNavBar from '../sections/BetterNavBar';
 function Dashboard(){
     const [college, setCollege] = useState({
         name:"",
@@ -24,8 +25,9 @@ function Dashboard(){
     }, [id])
     console.log(college);
     return (
-        <div className='bg-white w-screen min-h-screen overflow-x-hidden overflow-y-auto py-4'>
-            <div className='text-center'>
+        <div className='bg-white w-screen min-h-screen overflow-x-hidden overflow-y-auto pb-4'>
+            <BetterNavBar/>
+            <div className='text-center mt-5'>
                 <span className={'text-md font-bold text-slate-500'}>{college.name}</span>
             </div>
             <div className='w-11/12 mx-auto flex justify-between'>

@@ -5,16 +5,20 @@ import { FcGoogle } from 'react-icons/fc';
 import ButtonLoader from '../components/buttonLoader';
 import ButtonError from '../components/buttonError';
 import {AiFillEye, AiOutlineEyeInvisible} from 'react-icons/ai';
+import {useNavigate} from "react-router-dom"
 const SignupPage = () => {
     const [formData, setFormData] = useState({type:"student", username:"",email:"", password:""});
     const [isClicked,setisClicked] = useState(false);
     const [emptyError,setEmptyError] = useState(true);
     const [showPassword, setshowPassword] = useState(false);
+    const navigate = useNavigate();
     const submitHandler = (event) => {
         // if(event.target.id === 'Google_Button') console.log(event.target.id);
         event.preventDefault();
+        var check = false;
         if (formData['email'] == '' || formData['password'] == '') {
             setEmptyError(true);
+            check = true;
         } 
         else {
             setEmptyError(false);
@@ -22,6 +26,7 @@ const SignupPage = () => {
         setisClicked(true);
         setTimeout(()=>{
             setisClicked(false);
+            if(!check) navigate("/campus");
         },2000);
     }
     const changeHandler = (event)=>{
