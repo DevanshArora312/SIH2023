@@ -2,7 +2,9 @@
 
 Prototype code repository for SIH 2023.
 
-Problem statement
+Problem Statement - `Online integrated platform for projects taken up by the students of various universities/colleges`.
+
+Problem Statement ID - `1369`
 
 You can find the Prototype [Here](https://innoworks.vercel.app/) or in the About Repository portion.
 
