@@ -23,14 +23,14 @@ const CreateProject = () => {
                         <input id = "subtext" placeholder="Enter Subtext" maxlength = "50" className="rounded-xl p-2 h-10 focus:outline-none"/>
                         <p className="text-sm items-end p-4">(Max. 50 characters)</p>
                     </div>
-                    <div className="text-xl">
+                    <div className="text-xl w-full">
                         <label htmlFor="team" className="pt-2 mr-3">
                             Add Team Members :
                         </label>
-                        <div className="flex space-x-5">
-                            <input type="text" placeholder="Member Name" className="rounded-xl p-2 h-10 focus:outline-none"/>
-                            <input type="text" placeholder="Member Bio" className="rounded-xl p-2 h-10 focus:outline-none"/>
-                            <input type="file" placeholder="Member Image" className="rounded-xl p-2 h-10 focus:outline-none"/>
+                        <div className="flex space-x-5 f-full">
+                            <input type="text" placeholder="Member Name" className="rounded-xl p-2 h-10 focus:outline-none w-1/4"/>
+                            <input type="text" placeholder="Member Bio" className="rounded-xl p-2 h-10 focus:outline-none w-1/4"/>
+                            <input type="file" placeholder="Member Image" className="rounded-xl p-2 h-10 focus:outline-none w-1/4"/>
                         </div>
                         <button className="text-white text-sm mt-5" >Add new member</button>
                     </div>
