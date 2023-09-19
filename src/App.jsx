@@ -7,6 +7,7 @@ import  Landing  from './pages/landing';
 import SingleProject from './pages/SingleProject';
 import SingleProjectDark from './pages/SingleProjectDark';
 import  Dashboard  from './pages/dashboard';
+import Leaderboard from './pages/leaderboard';
 import CreateProject from './pages/CreateProject';
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/project/:id" element={<SingleProjectDark/>}/>
         <Route exact path='/campus/dashboard/:id' element ={<Dashboard/>}/>
         <Route exact path='/add/project/' element ={<CreateProject/>}/>
+        <Route exact path="leaderboard" element={<Leaderboard/>}/>
       </Routes>
     </BrowserRouter>
   )

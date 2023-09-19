@@ -152,3 +152,7 @@
 {
     width: 40px;
 }
+.mask:hover{
+  box-shadow: 0 -20px 20px rgba(100, 100, 100, 0.05), inset 0 -20px 20px rgba(100, 100, 100, 0.05), 0 20px 20px rgba(100, 100, 100, 0.5);
+  transform: scale(1.05);
+}

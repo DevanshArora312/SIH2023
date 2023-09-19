@@ -95,11 +95,13 @@ function Dashboard(){
                         {
                             college.previous_ratings.map((bar, index) => {
                                 return (
-                                    <div key={index} className='flex flex-col items-center'>
-                                        <div className='text-sm text-slate-500'>{bar.rating}</div>
+                                    <div key={index} className='flex flex-col items-center group cursor-pointer'>
+                                        <div className='text-sm text-slate-500 group-hover:opacity-100 opacity-0'>{bar.rating}</div>
                                         <div style={{ height: `${bar.rating*4}px`, 
                                                       width: '50px',
-                                                      background:'linear-gradient(45deg, #343d68, #343d68be, #343d687c)' }}></div>
+                                                      background:'linear-gradient(45deg, #343d68, #343d68be, #343d687c)'}} className='rounded-md my-2 duration-200 mask'>
+                                                        
+                                                      </div>
                                         <div className='text-sm text-slate-500'>{bar.month}</div>
                                     </div>
                                 );

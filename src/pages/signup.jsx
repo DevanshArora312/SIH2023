@@ -1,12 +1,12 @@
 import {React, useState} from 'react';
-import background from '../assets/background.png';
+import background from '../assets/login.webp';
 import {Link} from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import ButtonLoader from '../components/buttonLoader';
 import ButtonError from '../components/buttonError';
 
 const SignupPage = () => {
-    const [formData, setFormData] = useState({username:"",email:"", password:""});
+    const [formData, setFormData] = useState({type:"student", username:"",email:"", password:""});
     const [isClicked,setisClicked] = useState(false);
     const [emptyError,setEmptyError] = useState(true);
     const submitHandler = (event) => {
@@ -50,6 +50,14 @@ const SignupPage = () => {
                 <div className='w-[25%] min-w-[500px] aspect-[9/10] bg-white/10 rounded-md flex flex-col items-center justify-center gap-4 max-sm:min-w-[250px] max-md:p-5'>
                     <p className='text-white text-center text-[1.25rem]'>WELCOME </p>
                     <form onSubmit={submitHandler} className='flex flex-col items-center justify-center gap-4 p-5'>
+                        <div className='text-white flex items-center gap-4 bg-slate-400/20 px-4 py-4 rounded-full'>
+                            <div className={`px-4 py-4 rounded-full cursor-pointer duration-200 ${formData.type === 'student' ? 'bg-black/25' : ''}`}>
+                                STUDENT
+                            </div>
+                            <div className={`px-4 py-4 rounded-full cursor-pointer duration-200 ${formData.type === 'student' ? 'bg-black/25' : ''}`} >
+                                MODERATOR
+                            </div>
+                        </div>
                         <div className='w-full'>
                             <input className='rounded-md w-full h-10 bg-white focus:outline-none text-black px-2 ' name="username" id="username" type='text' placeholder='COD3R-4RY4N' onChange={changeHandler}></input>
                         </div>
