@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import { LeaderboardData } from '../data/leaderboardData';
 import {GiMedal} from 'react-icons/gi';
 import decoration2 from '../assets/decoration2.png';
+import BetterNavBar from '../sections/BetterNavBar';
 function Leaderboard(){
     const [isExploding, setIsExploding] = useState(false);
     useEffect(()=>{
         setIsExploding(true);
     },[])
     return(<div className="w-screen min-h-screen">
+        <BetterNavBar/>
         <div className='w-full flex justify-around'>
             {
                 isExploding && <ConfettiExplosion particleCount={200} colors={['#33FF5E','#33FFFC','#FCFF33','#8D33FF']} particleSize={8} duration={2500}/>
